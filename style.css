@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,6 +7,81 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     height: 100vh;
+    background: #74ebd5;
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+    background: linear-gradient(to right, #ACB6E5, #74ebd5);
+}
+
+.container {
+    width: 70%;
+    height: fit-content;
+    margin: 150px auto 0;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.container h1 {
+    text-align: center;
+    font-weight: 300;
+    color: gray;
+}
+
+.container h1 span {
+    font-weight: 900;
+    color: black;
+}
+
+.container form {
+    margin: 40px 0;
+}
+
+.container form .input-group,
+.container form .rate-group {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.container form .input-group label,
+.container form .input-group input,
+.container form .rate-group label,
+.container form .rate-group input {
+    display: block;
+}
+
+.container form .input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.container form .rate-group input {
+    width: 40%;
+    margin-top: 5px;
+}
+
+.container form button {
+    display: block;
+    width: 6rem;
+    margin: 20px auto;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.container form button:hover {
+    background-color: rgb(233, 154, 8);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.container .result {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 1.2rem;
 }

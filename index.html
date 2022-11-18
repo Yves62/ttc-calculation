@@ -11,16 +11,19 @@
     
     <div class="container">
         <h1>Mon prix <span>TTC</span></h1>
-        <div class="input-group">
-            <label for="price">Entrez votre prix HT</label>
-            <input type="number" name="number" id="number">
-        </div>
-        <div class="rate-group">
-            <label for="rate">Entrez votre prix HT</label>
-            <input type="range"  min="0" max="30" step="1" name="rate" id="rate">
-        </div>
+        <form>
+            <div class="input-group">
+                <label for="price" id="label-price">Entrez votre prix HT *</label>
+                <input type="number" name="number" id="number" placeholder="10" required>
+            </div>
+            <div class="rate-group">
+                <label for="rate" id="label-rate">Taux de TVA : 5%</label>
+                <input type="range"  min="1" max="30" step="1" name="rate" id="rate">
+            </div>
+            <button type="submit">Calculer</button>
+        </form>
         <div class="result">
-            <p></p>
+            <p>Taux TTC : </p>
         </div>
     </div>
 
