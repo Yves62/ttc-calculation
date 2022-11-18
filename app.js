@@ -15,13 +15,13 @@ function getRate(element, labelElement){
 getRate(rate,labelRate)
 
 const calcultTva = (numberHT, rate) => {
-    result = ((numberHT * rate) / 100 ) + result;
+    result = Number(((numberHT * rate) / 100 ) + numberHT);
     console.log(result, 'resultat');
-    resultTTC.textContent = `Taux TTC : ${result}`
+    resultTTC.textContent = `Prix TTC : ${result}%`
 }
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    calcultTva(priceHT.value, rate.value )
+    calcultTva(Number(priceHT.value), Number(rate.value) )
 })
 
