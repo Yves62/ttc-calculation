@@ -21,7 +21,7 @@ getRate(rate, labelRate)
  */
 const calcultTva = (numberHT, rate) => {
     result = Number(((numberHT * rate) / 100) + numberHT);
-    resultTTC.textContent = `Prix TTC : ${result}€`
+    resultTTC.textContent = `Prix TTC : ${result} €`
 }
 
 form.addEventListener('submit', (e) => {
